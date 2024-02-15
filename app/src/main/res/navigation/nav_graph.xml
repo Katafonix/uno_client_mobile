@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.uno.presentation.mainmenu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_joinLobbyFragment"
+            app:destination="@id/joinLobbyFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_createLobbyFragment"
+            app:destination="@id/createLobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.example.uno.presentation.lobby.LobbyFragment"
+        android:label="fragment_lobby"
+        tools:layout="@layout/fragment_lobby" />
+    <fragment
+        android:id="@+id/joinLobbyFragment"
+        android:name="com.example.uno.presentation.joinlobby.JoinLobbyFragment"
+        android:label="fragment_join_lobby"
+        tools:layout="@layout/fragment_join_lobby">
+        <action
+            android:id="@+id/action_joinLobbyFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createLobbyFragment"
+        android:name="com.example.uno.presentation.createlobby.CreateLobbyFragment"
+        android:label="fragment_create_lobby"
+        tools:layout="@layout/fragment_create_lobby">
+        <action
+            android:id="@+id/action_createLobbyFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+</navigation>

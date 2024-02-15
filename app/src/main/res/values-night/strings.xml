@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UNO</string>
+    <string name="create_lobby">Создать лобби</string>
+    <string name="connect_to_lobby">Подключиться к лобби</string>
+    <string name="main_menu">Главное меню</string>
+    <string name="lobby">Лобби</string>
+    <string name="status_is_ready">Готов</string>
+    <string name="status_is_not_ready">Не готов</string>
+    <string name="start_game">Начать игру</string>
+    <string name="default_nickname">Guest#123</string>
+    <!-- Strings related to login -->
+    <string name="empty_field">Пустое поле</string>
+    <string name="login_failed">"Лобби не существует"</string>
+    <string name="connect">Присоединиться</string>
+    <string name="enter_the_code">Введите код</string>
+    <string name="create">Создать</string>
+</resources>
